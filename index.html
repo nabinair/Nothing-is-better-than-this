@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just One Question 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 350px;
+    }
+    img {
+      width: 200px;
+      border-radius: 20px;
+      margin: 15px 0;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+    #no {
+      background: #adb5bd;
+      color: white;
+    }
+    #message {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Hey Love 💕</h2>
+
+  <img src="her.jpg" alt="Her Photo">
+
+  <h3>Will you be my girlfriend?</h3>
+
+  <button id="yes">Yes 💖</button>
+  <button id="no">No 🙈</button>
+
+  <p id="message"></p>
+</div>
+
+<script>
+  const yes = document.getElementById("yes");
+  const no = document.getElementById("no");
+  const message = document.getElementById("message");
+
+  yes.onclick = () => {
+    message.innerHTML = "Yayyyy 💕 I knew it! You just made me so happy 🥰";
+  };
+
+  no.onmouseover = () => {
+    no.style.transform =
+      "translate(" + (Math.random()*200 - 100) + "px," +
+      (Math.random()*200 - 100) + "px)";
+  };
+</script>
+
+</body>
+</html>
